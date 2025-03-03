@@ -14,10 +14,12 @@ pub fn main() !void {
     filter.initAllocator();
     defer filter.aa.deinit();
 
-    filter.main();
-    //filter.test1();
-    //filter.test2();
-    //try full.main();
+    // comment or uncomment these to decide which functions to run
+    //
+    filter.main(); // fast: latest and greatest
+    //filter.test1(); // slow: brute-force accuracy testing
+    //filter.test2(); // fast: smaller implementation of new method
+    //try full.main(); // slow: old high-functionality brute-force method
 
     print("\n\nfinished in {d} seconds\n\n", .{@as(f32, @floatFromInt(std.time.milliTimestamp() - start_timestamp)) / @as(f32, @floatFromInt(std.time.ms_per_s))});
 }
