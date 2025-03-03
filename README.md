@@ -15,7 +15,7 @@ So far, I've only been able to optimize two variables, but the performance gain 
 
 ### To compile and run the program
 
-This program is written in the Zig programming language.
+This program is written in the Zig programming language.  
 See this page for installing Zig: https://ziglang.org/learn/getting-started/#direct
 
 Open a terminal emulator in the same directory/folder as the "build.zig" file and "src" folder, then enter:
